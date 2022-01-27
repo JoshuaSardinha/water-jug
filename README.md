@@ -17,6 +17,30 @@ Partially Full).
 ### LIMITATIONS ###
 • Actions allowed: Fill, Empty, Transfer.
 
+
+## How to Build and Run
+In order to build and run the application, it is necessary to have the Flutter SDK installed and a configured IDE, such as Android Studio or Visual Studio. You can find more instructions on the installations in the [Flutter Install Page](https://docs.flutter.dev/get-started/install)
+
+Then, clone the repository in a selected directory using the Git command:
+
+```
+git clone https://github.com/JoshuaSardinha/water-jug.git
+```
+
+After the download, open the project directory *water_jug* with the preferred IDE.
+
+It is necessary to get the dependencies with the *Get dependencies* button in Android Studio or by inserting the command in a terminal in the same directory:
+
+```
+flutter pub get
+```
+
+Finally, plug in a phone or configure an emulator to build and run the code by pressing the "Run" button in Android Studio or using the command also in the same directory:
+
+```
+flutter run
+```
+
 ## The algorithm
 The problem was solved with a Breadth-First Search solution. The idea is to simulate all the possible states of the buckets with a graph. Each node represents a state of the pair of buckets and each edge represents an action taken with a bucket (emptying, filling or transfering). In this scenario, the first path which fulfills the criteria using the BFS is the most efficient (shortest) one.
 
